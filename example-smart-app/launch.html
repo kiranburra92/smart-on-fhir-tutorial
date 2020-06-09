@@ -12,7 +12,7 @@
     function getInputValues() {
       let firstName = document.getElementById("fname").value;
       let lastName = document.getElementById("lname").value;
-      window.iawareSmartBrowserFunction(firstName, lastName);
+      document.getElementById('display').innerHTML = window.iawareSmartBrowserFunction(firstName, lastName);
     }
   </script>
   <h2>Simple SMART Forms test</h2>
@@ -28,6 +28,7 @@
     <button onclick="getInputValues()"> myButton </button>
     <p>* myButton calls a browser function named iawareSmartBrowserFunction</p>
   </div>
+  <p><span id='display'></span></p>
 </body>
 
 </html>
