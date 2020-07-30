@@ -2,26 +2,32 @@
 <html lang="en">
 
 <head>
+	<script type="text/javascript">
+	 window.onbeforeunload = function () {
+	  return 'Are you really want to perform the action?';
+	 }
+	</script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Example-SMART-App</title>
 </head>
 
 <body>
-  <script>
-    function getInputValues() {
+  <script>	
+	function getInputValues() {
       let firstName = document.getElementById("fname").value;
       let lastName = document.getElementById("lname").value;
       document.getElementById('display2').innerHTML = window.iawareSmartBrowserFunction(firstName, lastName);
     }
   </script>
+ 
   <h2>Simple SMART Forms test</h2>
 
   <form>
     <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
+    <input type="text" id="fname" name="fname"><br>
     <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="text" id="lname" name="lname"><br><br>
   </form>
 
   <div class="spinner">
