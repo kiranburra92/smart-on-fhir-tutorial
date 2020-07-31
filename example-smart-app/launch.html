@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
-	<script type="text/javascript">
-	 window.onbeforeunload = function () {
-	  return 'Are you really want to perform the action?';
-	 }
+  <script type="text/javascript">
+  let iAware = {};
+  iAware.Platform = {};
+  iAware.Platform.refresh = function () {
+      alert("you clicked refresh");
+  };
+
 	</script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
